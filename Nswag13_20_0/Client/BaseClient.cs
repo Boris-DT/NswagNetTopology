@@ -15,7 +15,7 @@ namespace Nswag13_20_0.Client
         /// <param name="settings">JSON Serializer Settings</param>
         [SuppressMessage("Performance", "CA1822:Mark members as static",
             Justification = "Partial method, other side is generated code")]
-        protected void UpdateJsonSerializerSettings(JsonSerializerOptions settings)
+        protected static void UpdateJsonSerializerSettings(JsonSerializerOptions settings)
         {
             var geoJsonConverterFactory = new GeoJsonConverterFactory();
             settings.Converters.Add(geoJsonConverterFactory);
