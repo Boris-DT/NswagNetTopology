@@ -1,6 +1,5 @@
-﻿using NetTopologySuite.IO.Converters;
-using System.Diagnostics.CodeAnalysis;
-using System.Text.Json;
+﻿using System.Text.Json;
+using NetTopologySuite.IO.Converters;
 
 namespace Nswag14_0_7.Client
 {
@@ -13,8 +12,6 @@ namespace Nswag14_0_7.Client
         ///     Add additional JSON Converters
         /// </summary>
         /// <param name="settings">JSON Serializer Settings</param>
-        [SuppressMessage("Performance", "CA1822:Mark members as static",
-            Justification = "Partial method, other side is generated code")]
         protected static void UpdateJsonSerializerSettings(JsonSerializerOptions settings)
         {
             var geoJsonConverterFactory = new GeoJsonConverterFactory();
